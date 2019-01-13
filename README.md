@@ -50,7 +50,10 @@ module.exports = {
 3. Test the code by running `node index.js`. The outut should be something like this.
 
 ````
-TODO: Paste log from code
+[N-DBG] Connecting...
+[N-CON] https://xxxxxx.ngrok.io
+[U-DBG] Updating Controlicz to xxxxxx.ngrok.io
+[U-INF] Update Successful
 ````
 
 ### 3. Run it at boot.
