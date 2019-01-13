@@ -1,0 +1,28 @@
+{
+  "name": "ngrok-controlicz-updater",
+  "version": "1.0.0",
+  "description": "A simple NodeJs application to use ngrok.com's free tunnel with Controlicz",
+  "main": "index.js",
+  "dependencies": {
+    "ngrok": "^2.3.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayankraichura/ngrok_controlicz_autoupdater.git"
+  },
+  "keywords": [
+    "ngrok",
+    "controlicz"
+  ],
+  "author": "Mayank Raichura",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mayankraichura/ngrok_controlicz_autoupdater/issues"
+  },
+  "homepage": "https://github.com/mayankraichura/ngrok_controlicz_autoupdater#readme"
+}
