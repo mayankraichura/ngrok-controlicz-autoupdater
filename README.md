@@ -27,3 +27,47 @@ git clone https://github.com/mayankraichura/ngrok_controlicz_autoupdater
 cd ~/ngrok_controlicz_autoupdater
 npm install
 `````
+
+### 2. Configure 
+1. Copy `config-sample.js` to `config.js`
+
+````
+module.exports = {
+    domoticz: {
+        port: 8080      //Your local Domoticz port. Preferably non-HTTPS one.
+    },
+    controlicz : {
+        update: true,
+        username: "<controlicz username>",
+        password: "<controlicz password>"
+    },
+    ngrok: {
+        authtoken: "<ngrok.com authtoken>"      //Get your authtoken from here. https://dashboard.ngrok.com/auth
+    }
+};
+````
+2. Update the relevant fields in your `config.js` and hit save.
+3. Test the code by running `node index.js`. The outut should be something like this.
+
+````
+TODO: Paste log from code
+````
+
+### 3. Run it at boot.
+We will be using `rc.local` to run our app at the boot. To do that, open `/etc/rc.local` file for editing.
+
+````
+sudo nano /etc/rc.local
+````
+
+Right before `exit 0`, paste the below given line.
+
+````
+su pi -c 'node /home/pi/ngrok_controlicz_autoupdater/index.js < /dev/null &'
+````
+
+In case you are running a diffrent user, don't forget to replace `pi` with that username.
+
+Press `Ctrl + X` and then `Y`
+
+And we are done.
