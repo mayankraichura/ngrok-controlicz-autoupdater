@@ -100,4 +100,4 @@ And we are done. To test that everything is working, reboot your Pi by calling
 sudo reboot now
 ````
 
-And then check ngrok dashboard [link:https://dashboard.ngrok.com/status] and match the URL with the one in your Controlicz's profile page.
+And then check ngrok dashboard https://dashboard.ngrok.com/status and match the URL with the one in your Controlicz's profile page.
