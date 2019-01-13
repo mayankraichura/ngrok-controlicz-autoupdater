@@ -70,4 +70,34 @@ In case you are running a diffrent user, don't forget to replace `pi` with that 
 
 Press `Ctrl + X` and then `Y`
 
-And we are done.
+If you are editing the file for the first time, it should look something like this:
+````
+#!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+
+# Print the IP address
+_IP=$(hostname -I) || true
+if [ "$_IP" ]; then
+  printf "My IP address is %s\n" "$_IP"
+fi
+su pi -c 'node /home/pi/ngrok_controlicz_autoupdater/index.js < /dev/null &'
+exit 0
+````
+
+And we are done. To test that everything is working, reboot your Pi by calling
+
+````
+sudo reboot now
+````
+
+And then check ngrok dashboard [link:https://dashboard.ngrok.com/status] and match the URL with the one in your Controlicz's profile page.
