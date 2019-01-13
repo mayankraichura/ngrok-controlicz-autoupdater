@@ -2,7 +2,7 @@
 A simple script that allows you to use ngrok.com's free tunnels with your Controlicz.
 
 # What is Controlicz?
-Controlicz is the gateway between your Voice Assistants such as Google Home, Echo or Google Assistant on your phone and Domoticz Home Automation running on your Raspberry Pi. It's not free but costs only 2$/month to use.
+Controlicz is the gateway between your Voice Assistants such as Google Home, Echo or Google Assistant on your phone and Domoticz Home Automation running on your Raspberry Pi. It's not free but costs only 2£/month to use.
 
 This allows the safety of a local system with the comfort of controlling it via voice commands. Effectively giving voice to your Domoticz Home Automation system.
 
