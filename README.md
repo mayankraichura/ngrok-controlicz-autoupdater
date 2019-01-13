@@ -14,7 +14,7 @@ NgRok (ngrok.com) is a free/paid tunneling service that provides a small client 
 Although, ngrok is free to use, every time you connect to ngrok, in free version, a new URL is generated everytime putting us at a disadvantage. However, this limitation is waived off in their paid versions starting from 5$ / month.
 
 # What does this app do?
-It turns out that ngrok provides a nice NPM module for ngrok that you can include in your NodeJs application and use it's event based API to do some level of automation. I then contacted Nick (@madgini) of Controlicz, if he could provide a simple API for me to be able to update just the hostname and he was kind enough to comply. 
+It turns out that ngrok provides a nice NPM module for ngrok that you can include in your NodeJs application and use it's event based API to do some level of automation. I then contacted Nick (@madgeni) of Controlicz, if he could provide a simple API for me to be able to update just the hostname and he was kind enough to comply. 
 
 Combining this two things, I created a simple NodeJs application that will monitor the ngrok process for changes in its URL and report it to Controlicz server. 
 
