@@ -104,3 +104,6 @@ sudo reboot now
 ````
 
 And then check ngrok dashboard https://dashboard.ngrok.com/status and match the URL with the one in your Controlicz's profile page.
+
+### 4. Update `port` on Controlicz
+The HTTPS url of ngrok runs on default port of 443. So you need to update the port number on Controlicz profile to to 443.
